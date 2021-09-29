@@ -366,7 +366,8 @@ body
     align-items: center;
     justify-content: center;
 }
-.social-list-link:hover
+.social-list-link:hover,
+.social-list-link:focus
 {
     background-color: var(--secondary-text-color);
     border-radius: 50px;
@@ -388,7 +389,7 @@ body
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .clients-item:not(:last-child)
 {
@@ -403,7 +404,8 @@ body
     justify-content: center;
     color: #AFB1B8;
 }
-.clients-link:hover
+.clients-link:hover,
+.clients-link:focus
 {
     color: var(--secondary-text-color);
 }
@@ -527,6 +529,10 @@ body
 .portfolio-content-item:not(:nth-child(n+7))
 {
     margin-bottom: 30px;
+}
+.portfolio-content-item:hover
+{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-description
 {
